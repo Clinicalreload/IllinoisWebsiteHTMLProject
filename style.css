@@ -1,0 +1,182 @@
+.main-page {
+    font-family: Arial, sans-serif;
+    margin: 2px;
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url("assets/prairie.jpg");
+}
+
+.springfield {
+    font-family: Arial, sans-serif;
+    margin: 2px;
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url("assets/springfield.webp");
+}
+
+.chicago {
+    font-family: Arial, sans-serif;
+    margin: 2px;
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url("assets/chicago.jpg");
+}
+
+.norridge {
+    font-family: Arial, sans-serif;
+    margin: 2px;
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url("assets/norridge.jpg");
+}
+
+.palatine {
+    font-family: Arial, sans-serif;
+    margin: 2px;
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url("assets/palatine.jpg");
+}
+
+.overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+    color: black;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container img {
+    width: 300px;
+    height: 200px; 
+    margin-bottom: 10px;
+    padding-top: 25px;
+}
+
+#float-right {
+    float: right;
+    margin-right: 50px;
+}
+
+header,
+nav,
+section,
+aside {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+div {
+    text-align: center;
+}
+
+nav {
+    padding-left: 550px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}
+
+ol {
+    text-align: left;
+    background-color: transparent;
+}
+
+nav ul li {
+    margin: 0;
+    text-decoration: underline blue;
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    padding: 10px;
+    transition: padding 0.3s ease-in-out;
+}
+
+table {
+    margin-left: 125px;
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+a:hover {
+    padding: 15px;
+    border: 10px lightgrey
+}
+
+img {
+    width: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form label {
+    margin-right: 10px;
+    width: 200px;
+    text-align: left;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 500px;
+}
+
+td strong {
+    font-weight: bold;
+  }

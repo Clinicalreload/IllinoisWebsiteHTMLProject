@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chicago</title>
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        function validateEmails() {
+            
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var email = document.getElementById("email").value;
+            var confirmEmail = document.getElementById("confirmEmail").value;
+            
+            if (!firstName || !lastName || !email || !confirmEmail) {
+                alert("Please fill out all required fields.");
+                return;
+            }
+
+            if (email !== confirmEmail) {
+                alert("Email addresses do not match. Please try again.");
+                document.getElementById("email").value = "";
+                document.getElementById("confirmEmail").value = "";
+            } else {
+                alert("Form submitted successfully!");
+                document.getElementById("contactForm").reset();
+            }
+        }
+    </script>
+  </head>
+
+<body class="chicago">
+    <div class="overlay">
+    <div class="content">
+    <nav>
+        <ul>
+          <li> <a href="../index.html">Home Page</a></li>
+         
+          <li><a href="norridge.html">Norridge</a></li>
+
+          <li><a href="palatine.html">Palatine</a></li>
+
+          <li><a href="cities.html">Springfield</a></li>
+        </ul>
+    </nav>
+
+</head>
+<br><br>
+
+<body>
+<header>
+    <h1>Chicago</h1>
+    <p>Explore the chaotic city of Chicago. Chicago is known famously for the Great Chicago Fire of 1871 where most of the city burned down due to a fire that started in a barn that rapidly
+      grew out of control and the sidewalks were made out of wood at the time. For more history of Chicago visit<a href="https://www.chicago.gov/city/en/about/history.html" target="_blank">https://www.chicago.gov/city/en/about/history.html.</a>
+      Chicago is the most populated city within the state of Illinois housing over 2.7 million people.
+      Chicago is located in the northeastern region of Illinois. Chicago is home to all of the professional sports teams which include the White Sox, Cubs, Bears, and Blackhawks.
+      Chicago is an urban city and known for being a center for financem transportation and culture(Google).
+      Average income for Chicago can vary depending on location but falls mainly in the higher ranking.
+    </p>
+</header>
+
+<img src="..\assets\bean.webp" id="float-right" alt="bean"/>
+<img src="..\assets\fountain.jpg" id="float-right" alt="fountain"/>
+<section>
+    <h2>Attractions</h2>
+    <p>Some of the must-visit attractions of Chicago include:
+      <ol>
+        <li>Millennium Park</li>
+        <li>Buckingham Fountain</li>
+        <li>Navy Pier</li>
+        <li>The Art Institute of Chicago</li>
+        <li>Wringley Field</li>
+        <li>Soldier's Field</li>
+        <li>Guranteed Rate Field</li>
+        <li>United Center</li>
+      </ol>
+    </p>
+</section>
+<aside>
+    <h2>Food</h2>
+    You cannot come to Illinois without getting yourself a Chicago style pizza, or a famous Chicago hotdog
+    <div class="image-container">
+      <img src="..\assets\deepdish.jpg" alt="deepdish"/>
+      <img src="..\assets\hotdog.jpg" alt="hotdog"/>
+      <img src="..\assets\italian.jpg" alt="italian"/>
+    </div>
+    <h2>Contest For a Free Trip</h2>
+    <form id="contactForm">
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+        </div>
+        <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+        <div>
+            <label for="confirmEmail">Confirm Email:</label>
+            <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm your email address" required>
+        </div>
+        <div>
+            <label for="question">Question:</label>
+            <textarea id="question" name="question" rows="4" placeholder="Ask your question here"></textarea>
+        </div>
+        <div>
+            <button type="button" onclick="validateEmails()">Submit</button>
+            <input type="reset" />
+        </div>
+    </form>
+</aside>
+    </div>
+    </div>
+</body>
+
+
+
+</html>
